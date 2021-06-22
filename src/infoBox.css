@@ -1,0 +1,15 @@
+.infoBox{
+    flex:1;
+}
+.infoBox:not(:last-child){
+    margin-right: 10px;
+}
+.infoBox--selected{
+    border-top: 10px solid green;
+}
+.infoBox--isRed{
+    border-top: 10px solid red;
+}
+.infoBox--isGrey{
+    border-top: 10px solid gray;
+}

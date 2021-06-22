@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["name"].value;
+            if (x.length>60) {
+                alert("Name must be within 60 char");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        customer id:<input type="text" name="c_id"><br>
+        name:<input type="text" name="name"><br>
+        <input type="button" onclick="newFunction()" value="Reset">
+     </form>
+</body>
+</html>
